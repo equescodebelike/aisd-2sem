@@ -52,7 +52,7 @@ public class Student {
         s += "Name: " + this.name + "\n";
         s += "Surname: " + this.surname + "\n";
         for (Map.Entry<Integer, List<Integer>> sem : this.marks.entrySet()) {
-            s += "Semester: " + sem.getKey() + "\n";
+            s += "SEMESTER " + sem.getKey() + "\n";
             if (!sem.getValue().isEmpty()) {
                 for (int marks : sem.getValue()) {
                     s += "Mark: " + marks + "\n";
