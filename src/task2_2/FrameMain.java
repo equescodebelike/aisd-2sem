@@ -89,7 +89,7 @@ public class FrameMain extends JFrame {
                         inputList.addLast(j);
                     }
 
-                    MyLinkedList<Integer> answerList = Task2.execute(inputList);
+                    MyLinkedList<Integer> answerList = Task2.convert(inputList);
                     int[] answerArr = new int[answerList.getCount()];
                     for (int i = 0; i < answerList.getCount(); i++) {
                         answerArr[i] = answerList.get(i);
