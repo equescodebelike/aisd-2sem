@@ -5,7 +5,7 @@ import util.MyLinkedList;
 public class Task2 {
 
     public static MyLinkedList<Integer> convert(MyLinkedList<Integer> entryList) throws Exception {
-        final MyLinkedList<Integer> answerList = new MyLinkedList<>();
+        MyLinkedList<Integer> answerList = new MyLinkedList<>();
         int counter = 0;
 
         for (int i = 0; i < entryList.getCount(); i++) {
