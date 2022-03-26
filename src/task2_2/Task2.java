@@ -8,10 +8,10 @@ public class Task2 {
         MyLinkedList<Integer> answerList = new MyLinkedList<>();
         int counter = 0;
 
-        for (int i = 0; i < entryList.getCount(); i++) {
-            for (int j = 0; j < entryList.getCount(); j++) {
+        for (int i = 0; i < entryList.getCount(); i++) { // берем элемент за сравнение
+            for (int j = 0; j < entryList.getCount(); j++) { // с чем сравниваем
 
-                if (entryList.get(j).equals(entryList.get(i)) && j != i) {
+                if (entryList.get(j).equals(entryList.get(i)) && j != i) { // условие если находим одинаковые
                     counter++;
                 }
 
@@ -21,10 +21,10 @@ public class Task2 {
             }
 
             if (counter == 0) {
-                answerList.addLast(entryList.get(i));
+                answerList.addLast(entryList.get(i)); // добавляем в ответ
             }
 
-            counter = 0;
+            counter = 0; // cброс счетчика после прохождения цикла
         }
 
         return answerList;

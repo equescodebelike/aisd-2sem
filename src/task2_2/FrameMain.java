@@ -71,7 +71,7 @@ public class FrameMain extends JFrame {
                     int[] arr = ArrayUtils.createRandomIntArray(tableInput.getColumnCount(), 100);
                     JTableUtils.writeArrayToJTable(tableInput, arr);
                 } catch (Exception e) {
-                    SwingUtils.showInfoMessageBox("Enter integer list please");
+                    SwingUtils.showInfoMessageBox("Random array error");
                 }
             }
         });
@@ -90,14 +90,14 @@ public class FrameMain extends JFrame {
                     }
 
                     MyLinkedList<Integer> answerList = Task2.convert(inputList);
-                    int[] answerArr = new int[answerList.getCount()];
+                    int[] answerArr = new int[answerList.getCount()]; // первод из линкедлиста в одномерный массив
                     for (int i = 0; i < answerList.getCount(); i++) {
                         answerArr[i] = answerList.get(i);
                     }
 
                     JTableUtils.writeArrayToJTable(tableOutput, answerArr);
                 } catch (Exception e) {
-                    SwingUtils.showInfoMessageBox("Enter integer list please");
+                    SwingUtils.showInfoMessageBox("Enter integer list");
                 }
             }
         });
