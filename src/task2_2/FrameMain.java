@@ -90,8 +90,8 @@ public class FrameMain extends JFrame {
                     }
 
                     MyLinkedList<Integer> answerList = Task2.convert(inputList);
-                    int[] answerArr = new int[answerList.getCount()]; // первод из линкедлиста в одномерный массив
-                    for (int i = 0; i < answerList.getCount(); i++) {
+                    int[] answerArr = new int[answerList.getSize()]; // первод из линкедлиста в одномерный массив
+                    for (int i = 0; i < answerList.getSize(); i++) {
                         answerArr[i] = answerList.get(i);
                     }
 
