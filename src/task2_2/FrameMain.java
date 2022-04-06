@@ -16,7 +16,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import util.ArrayUtils;
 import util.JTableUtils;
 import util.SwingUtils;
-import util.MyLinkedList;
+import util.CustomLinkedList;
 
 public class FrameMain extends JFrame {
     private JPanel panelMain;
@@ -83,13 +83,13 @@ public class FrameMain extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
                     int[] arr = JTableUtils.readIntArrayFromJTable(tableInput);
-                    MyLinkedList<Integer> inputList = new MyLinkedList<>();
+                    CustomLinkedList<Integer> inputList = new CustomLinkedList<>();
                     assert arr != null;
                     for (int j : arr) {
                         inputList.addLast(j);
                     }
 
-                    MyLinkedList<Integer> answerList = Task2.convert(inputList);
+                    CustomLinkedList<Integer> answerList = Task2.convert(inputList);
                     int[] answerArr = new int[answerList.getSize()]; // первод из линкедлиста в одномерный массив
                     for (int i = 0; i < answerList.getSize(); i++) {
                         answerArr[i] = answerList.get(i);

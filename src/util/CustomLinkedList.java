@@ -1,6 +1,6 @@
 package util;
 
-public class MyLinkedList<T> {
+public class CustomLinkedList<T> {
 
     private static class ListItem<T> {
         public T value;
@@ -162,5 +162,9 @@ public class MyLinkedList<T> {
 
     public int getSize() {
         return size;
+    }
+
+    public void sortList(){
+
     }
 }

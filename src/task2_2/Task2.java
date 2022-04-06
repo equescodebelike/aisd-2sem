@@ -1,11 +1,11 @@
 package task2_2;
 
-import util.MyLinkedList;
+import util.CustomLinkedList;
 
 public class Task2 {
 
-    public static MyLinkedList<Integer> convert(MyLinkedList<Integer> entryList) throws Exception {
-        MyLinkedList<Integer> answerList = new MyLinkedList<>();
+    public static CustomLinkedList<Integer> convert(CustomLinkedList<Integer> entryList) throws Exception {
+        CustomLinkedList<Integer> answerList = new CustomLinkedList<>();
         int counter = 0;
 
         for (int i = 0; i < entryList.getSize(); i++) { // берем элемент за сравнение
