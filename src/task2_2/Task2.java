@@ -9,7 +9,7 @@ public class Task2 {
         int counter = 0;
 
         for (int i = 0; i < entryList.getSize(); i++) { // берем элемент за сравнение
-            for (int j = 0; j < entryList.getSize(); j++) { // с чем сравниваем
+            for (int j = entryList.getSize() - 1; j >= 0; j--) { // с чем сравниваем
 
                 if (entryList.get(j).equals(entryList.get(i)) && j != i) { // условие если находим одинаковые
                     counter++;
