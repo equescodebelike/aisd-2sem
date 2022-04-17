@@ -1,5 +1,8 @@
 package util;
 
+import java.util.Comparator;
+import java.util.List;
+
 public class CustomLinkedList<T> {
 
     private static class ListItem<T> {
@@ -164,7 +167,4 @@ public class CustomLinkedList<T> {
         return size;
     }
 
-    public void sortList(){
-
-    }
 }
