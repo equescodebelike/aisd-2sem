@@ -28,7 +28,7 @@ public class FrameMain extends JFrame {
     private JButton buttonExecute;
 
     public FrameMain() {
-        this.setTitle("FrameMain");
+        this.setTitle("Task2");
         this.setContentPane(panelMain);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();

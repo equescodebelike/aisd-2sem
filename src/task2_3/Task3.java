@@ -5,29 +5,6 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class Task3 {
-    public static void main(String[] args) throws Exception {
-        String[] s = new String[]{"3", "4234", "fsdfsdfgsdfg", "rrr"};
-        CustomPQ.Node pq = setCustomPQueue(s);
-
-        /* while (PriorityQueue.isEmpty(pq) == 0) {
-            System.out.println(PriorityQueue.peek(pq));
-            pq = PriorityQueue.pop(pq);
-        } */
-        String[] s2 = customConvert(pq);
-        for (int i = 0; i < s2.length; i++) {
-            System.out.println(s2[i]);
-        }
-
-        String[] s4 = new String[]{};
-        PriorityQueue<String> javaPQ = setJavaPQueue(s4);
-        String[] s3 = javaConvert(javaPQ);
-        for (int i = 0; i < s3.length; i++) {
-            System.out.println(s3[i]);
-        }
-
-
-    }
-
     public static CustomPQ.Node setCustomPQueue(String[] entry) throws Exception { // на основе связного списка
         sort(entry);
         if (entry.length == 0) {

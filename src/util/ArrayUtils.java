@@ -516,6 +516,15 @@ public class ArrayUtils {
         }
     }
 
+    public static void writeStringArrayToFile(String fileName, String[] arr)
+            throws FileNotFoundException {
+        try (PrintWriter out = new PrintWriter(fileName)) {
+            for (int i = 0; i < arr.length; i++) {
+                out.println(arr[i]);
+            }
+        }
+    }
+
     public static void writeArrayToFile(String fileName, double[] arr, String itemFormat)
             throws FileNotFoundException {
         try (PrintWriter out = new PrintWriter(fileName)) {
