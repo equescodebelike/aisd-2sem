@@ -38,11 +38,10 @@ public class SimpleBinaryTree<T> implements BinaryTree<T> {
         }
     }
 
-    public void clonet() {
+    /* public void clonet() {
         clone(root);
     }
 
-    //Task 5
     public SimpleTreeNode clone(SimpleTreeNode root) {
         SimpleTreeNode n1 = new SimpleTreeNode(null);
         n1.value = root.value;
@@ -64,7 +63,7 @@ public class SimpleBinaryTree<T> implements BinaryTree<T> {
             newNode.right.value = root.right.value;
             cloneTree(root.right, newNode.right);
         }
-    }
+    } */
 
     protected SimpleTreeNode root = null;
 
