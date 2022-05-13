@@ -8,7 +8,8 @@ public class CustomBT { // класс простейшего двоичного 
 
         public Node(int value) {
             this.value = value;
-            left = right = null;
+            left = null;
+            right = null;
         }
     }
 
@@ -16,7 +17,7 @@ public class CustomBT { // класс простейшего двоичного 
         if (node == null) {
             return (new Node(value));
         } else {
-            if (value >= node.value) { // отбор правого и левого потомка
+            if (value <= node.value) { // отбор правого и левого потомка
                 node.left = insert(node.left, value);
             } else {
                 node.right = insert(node.right, value);

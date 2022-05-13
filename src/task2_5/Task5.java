@@ -7,10 +7,11 @@ public class Task5 {
         CustomBT.Node root = null;
         CustomBT.Node root2;
         root = tree.insert(root, 10);
-        tree.insert(root, 43);
+        tree.insert(root, 47);
         tree.insert(root, 9);
-        tree.insert(root, 3);
         tree.insert(root, 11);
+        tree.insert(root, 67);
+        tree.insert(root, 56);
         tree.insert(root, 8);
         tree.insert(root, 4);
         tree.insert(root, 56);
