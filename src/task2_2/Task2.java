@@ -1,6 +1,6 @@
 package task2_2;
 
-import util.CustomLinkedList;
+import util.linked.CustomLinkedList;
 
 public class Task2 {
 

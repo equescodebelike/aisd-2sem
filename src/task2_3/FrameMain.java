@@ -1,8 +1,8 @@
 package task2_3;
 
-import util.ArrayUtils;
-import util.JTableUtils;
-import util.SwingUtils;
+import util.basic.ArrayUtils;
+import util.basic.JTableUtils;
+import util.basic.SwingUtils;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;

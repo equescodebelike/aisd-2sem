@@ -13,10 +13,10 @@ import javax.swing.JTable;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import util.ArrayUtils;
-import util.JTableUtils;
-import util.SwingUtils;
-import util.CustomLinkedList;
+import util.basic.ArrayUtils;
+import util.basic.JTableUtils;
+import util.basic.SwingUtils;
+import util.linked.CustomLinkedList;
 
 public class FrameMain extends JFrame {
     private JPanel panelMain;

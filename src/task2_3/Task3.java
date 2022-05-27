@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class Task3 {
-    public static CustomPQ.Node setCustomPQueue(String[] entry) throws Exception { // на основе связного списка
+    public static CustomPQ.Node setCustomPQueue(String[] entry) throws Exception { // собственная (кастомная) очередь с приоритетом на основе связного списка
         sort(entry);
         if (entry.length == 0) {
             throw new Exception("Empty array");
