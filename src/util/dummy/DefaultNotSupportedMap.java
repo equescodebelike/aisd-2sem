@@ -59,11 +59,6 @@ public interface DefaultNotSupportedMap<K, V> extends Map<K, V> {
     }
 
     @Override
-    default Set<K> keySet() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
     default Collection<V> values() {
         throw new UnsupportedOperationException("Not supported yet.");
     }

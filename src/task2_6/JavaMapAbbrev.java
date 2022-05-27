@@ -1,7 +1,6 @@
 package task2_6;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,8 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class JavaMapAbbrev {
-    public static String jSearch(HashMap<String, Integer> map, String file) throws FileNotFoundException {
-        String[] separatedLine;
+    public static String jSearch(HashMap<String, Integer> map, String file) {
         String result = "";
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -22,7 +20,6 @@ public class JavaMapAbbrev {
             while (line != null) {
                 sb.append(line);
                 sb.append(System.lineSeparator());
-                // separatedLine = line.split("\\b[\\p{Lu}.]{2,6}\\b");
                 String regEx = "\\b[\\p{Lu}.]{2,5}\\b";
                 Pattern pattern = Pattern.compile(regEx);
                 Matcher matcher = pattern.matcher(line);
@@ -43,7 +40,7 @@ public class JavaMapAbbrev {
             e.printStackTrace();
         }
         for (String abb : map.keySet()) {
-            result += abb + " " + map.get(abb) + " time(s), ";
+            result += abb + " " + map.get(abb) + " time(s) ; ";
         }
         return result;
     }

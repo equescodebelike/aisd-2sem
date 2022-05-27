@@ -1,8 +1,5 @@
 package util.linked;
 
-import java.util.Comparator;
-import java.util.List;
-
 public class CustomLinkedList<T> {
 
     private static class ListItem<T> {
