@@ -21,7 +21,7 @@ public class CustomMapAbbrev {
             while (line != null) { // чтение текстового файла
                 sb.append(line);
                 sb.append(System.lineSeparator());
-                String regEx = "\\b[\\p{Lu}.]{2,5}\\b"; // регулярное для аббревиатур подходит любой капс
+                String regEx = "\\b[\\p{Lu}.]{2,5}\\b"; // регулярное для аббревиатур от 2 до 5 символов
                 Pattern pattern = Pattern.compile(regEx);
                 Matcher matcher = pattern.matcher(line);
                 List<String> abbrevs = new ArrayList<>();
